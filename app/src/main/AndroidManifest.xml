@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kncstorytellerapp.mothergoose">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WriteStory"
+            android:label="@string/title_activity_write_story"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".readStory"
+            android:label="@string/title_activity_read_story"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".logIn"
+            android:label="@string/title_activity_log_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".signUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".story"
+            android:label="@string/title_activity_story"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".myShelf"
+            android:label="@string/title_activity_my_shelf"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addaContribution"
+            android:label="@string/title_activity_adda_contribution"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FirebaseTest"
+            android:label="@string/title_activity_firebase_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".getMyStories"
+            android:label="@string/title_activity_get_my_stories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".storiesIContributed"
+            android:label="@string/title_activity_stories_icontributed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".acceptRejectContributions"
+            android:label="@string/title_activity_accept_reject_contributions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".editMyProfile"
+            android:label="@string/title_activity_edit_my_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".aboutAs"
+            android:label="@string/title_activity_about_as"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".aboutApp"
+            android:label="@string/title_activity_about_app"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

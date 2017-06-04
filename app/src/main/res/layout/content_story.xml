@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kncstorytellerapp.mothergoose.story"
+    tools:showIn="@layout/activity_story">
+
+
+    <kncstorytellerapp.mothergoose.VerticalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--image-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:id="@+id/storyImageView"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+            <!--story name-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:id="@+id/storyNameTextView"
+                        android:textSize="30dp"
+                        android:background="#7A1EA1"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="true"
+                        android:paddingLeft="7dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Authors' Name"
+                        android:id="@+id/storyNameTextViewAuth"
+                        android:textSize="17dp"
+                        android:background="#691A99"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="true"
+                        android:paddingLeft="7dp"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--story-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#e3e2e4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:id="@+id/mainStoryTextView"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:textColor="#040404"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <!--contributions-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:id="@+id/storyView">
+                    </ListView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <!--like and cont buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_centerHorizontal = "true"
+                android:layout_centerVertical = "true"
+                android:paddingTop="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Continue"
+                            android:id="@+id/btncontribute"
+                            android:background="#00B8D4"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_centerVertical = "true"
+                            android:textColor="#fcfafa" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/likeBtn"
+                            android:src="@drawable/likeicone"
+                            android:adjustViewBounds="false"
+                            android:layout_centerHorizontal = "true"
+                            android:layout_centerVertical = "true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/likeCount"
+                            android:textColor="#040404"
+                            android:text="Medium Text"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </kncstorytellerapp.mothergoose.VerticalScrollview>
+
+</RelativeLayout>

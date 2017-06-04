@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Fables</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_write_story">writeStory</string>
+
+
+    <string-array name="categories">
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Educational</item>
+        <item>Horror</item>
+    </string-array>
+
+    <string-array name="categoriesSearch">
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Educational</item>
+        <item>Horror</item>
+        <item>Non</item>
+    </string-array>
+
+
+    <string name="title_activity_read_story">Read a story</string>
+    <string name="title_activity_azert">Azert</string>
+    <string name="title_activity_tre">tre</string>
+    <string name="title_activity_log_in">Log In</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_my_shelf">My Shelf</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <!-- chthz -->
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="title_activity_menu_page">Menu Page</string>
+
+    <string name="title_activity_read_astory">Read A Story</string>
+    <string name="title_activity_nav_drawer">navDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_nav_bar">navBar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">Home</string>
+    <string name="title_activity_testtttttttttttt">testtttttttttttt</string>
+    <string name="title_activity_story">story</string>
+    <string name="title_activity_adda_contribution">Continue</string>
+    <string name="title_activity_firebase_test">FirebaseTest</string>
+    <string name="title_activity_get_my_stories">My stories</string>
+    <string name="title_activity_stories_icontributed">Storie I contributed</string>
+    <string name="title_activity_accept_reject_contributions">Continue your story</string>
+    <string name="title_activity_edit_my_profile">My Profile</string>
+    <string name="title_activity_about_as">About Us</string>
+    <string name="title_activity_about_app">About App</string>
+</resources>
